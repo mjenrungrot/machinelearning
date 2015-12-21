@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage[letterpaper]{geometry}
+\usepackage{graphicx}
+\RequirePackage[12tabu, orthodox]{nag}
+\usepackage{microtype} 	% impoves spacing
+\usepackage{siunitx}	% simplify TeXing
+\usepackage{cleveref}
+\usepackage[colorlinks=false, pdfborder = {0 0 0}]{hyperref}
+
+% Table of contents section
+% -1 part     1 section     3 subsubsection  5 subparagraph
+%  0 chapter  2 subsection  4 paragraph
+\setcounter{tocdepth}{3}
+
+% Automatic parenthesizing
+% \usepackage{nath}
+% \delimgrowth=1
+
+% pseudocode
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% TITLE 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Machine Learning}
+\author{Herrick Fang}
+\date{ }
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Machine Learning vs Statistical Learning}
+Machine Learning: applies more toward large scale applications focusing on prediction and accuracy
+
+Another way to put Machine Learning is to teach a computer how to do something without letting it be  explicitly programmed.
+\\
+Statistical Learning: focuses more on models, interpretation, precision, and uncertainty
+
+\section{Supervised Learning}
+''Right Answers'' are given to the algorithm to improve  
+
+\subsection{Linear Regression with One Variable}
+Predict Real Continuous Valued Output, finite ordered set (e.g. survived, digit 0-9, class)
+
+\subsubsection{Model and Cost Function}
+Minimize $\theta_{i}'s$, the {\bf parameters}, such that the hypothesis function,
+\begin{equation}
+     \label{eq:hypothesis_function}
+     h_{\theta}(x) = \theta_{0} + \theta_{1}x
+\end{equation}
+is close to $y$ given the input variables $x's$, so that our set of $m$ number of training examples  $\left( x^{\left( i \right)}, y^{\left( i \right)} \right) $, will be minimized.
+
+\paragraph{Cost Function}
+The squared error function is a reasonable choice in minimizing the hypothesis function,
+\begin{equation}
+    \label{eq:cost_function}
+    J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)})^2.
+\end{equation}
+
+
+\paragraph{Gradient Descent}
+
+
+
+
+\subsection{Classification}
+Discrete/Quantitative Outputs Only (e.g. price, blood pressure)
+
+\section{Unsupervised Learning}
+We are not telling the algorithm the right answer, so the computer finds its own patterns.
+
+
+\end{document}
