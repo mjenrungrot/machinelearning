@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Supervised Learning}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Part I: Linear Regression}{1}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}LMS algorithm}{1}{subsubsection.1.1.1}
+\contentsline {paragraph}{gradient descent}{1}{section*.2}
+\contentsline {paragraph}{batch gradient descent}{2}{section*.3}
+\contentsline {paragraph}{stochastic gradient descent}{2}{section*.4}
+\contentsline {subsection}{\numberline {1.2}The normal equations}{2}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Matrix derivatives}{2}{subsubsection.1.2.1}
+\contentsline {paragraph}{$\nabla _A f(A)$}{2}{section*.5}
+\contentsline {paragraph}{trace operation}{3}{section*.6}
+\contentsline {subsubsection}{\numberline {1.2.2}Least squares revisited}{3}{subsubsection.1.2.2}
+\contentsline {paragraph}{design matrix}{3}{section*.7}
+\contentsline {section}{\numberline {2}Statistical Learning}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Measuring the Quantity fit}{4}{subsection.2.1}
+\contentsline {paragraph}{Mean squared error}{4}{section*.8}
+\contentsline {paragraph}{degree of freedom}{5}{section*.9}
+\contentsline {subsection}{\numberline {2.2}The Bias-Variance Trade-Off}{6}{subsection.2.2}
+\contentsline {paragraph}{Expected test MSE}{6}{section*.10}
+\contentsline {paragraph}{Variance}{6}{section*.11}
+\contentsline {paragraph}{bias}{6}{section*.12}
+\contentsline {subsection}{\numberline {2.3}The Classification Setting}{7}{subsection.2.3}
+\contentsline {paragraph}{the training error rate}{7}{section*.13}
+\contentsline {paragraph}{The Bayes Classifier}{7}{section*.14}
+\contentsline {paragraph}{K-Nearest Neighbors}{7}{section*.15}
