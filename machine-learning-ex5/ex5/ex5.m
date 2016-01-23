@@ -40,7 +40,7 @@ xlabel('Change in water level (x)');
 ylabel('Water flowing out of the dam (y)');
 
 fprintf('Program paused. Press enter to continue.\n');
-pause;
+%pause;
 
 %% =========== Part 2: Regularized Linear Regression Cost =============
 %  You should now implement the cost function for regularized linear 
@@ -54,7 +54,7 @@ fprintf(['Cost at theta = [1 ; 1]: %f '...
          '\n(this value should be about 303.993192)\n'], J);
 
 fprintf('Program paused. Press enter to continue.\n');
-pause;
+%pause;
 
 %% =========== Part 3: Regularized Linear Regression Gradient =============
 %  You should now implement the gradient for regularized linear 
@@ -68,8 +68,8 @@ fprintf(['Gradient at theta = [1 ; 1]:  [%f; %f] '...
          '\n(this value should be about [-15.303016; 598.250744])\n'], ...
          grad(1), grad(2));
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+fprintf('Program paused. Press enter to continue.\n'); 
+%pause;
 
 
 %% =========== Part 4: Train Linear Regression =============
@@ -82,7 +82,7 @@ pause;
 %
 
 %  Train linear regression with lambda = 0
-lambda = 0;
+lambda = 1;
 [theta] = trainLinearReg([ones(m, 1) X], y, lambda);
 
 %  Plot fit over the data
@@ -94,8 +94,7 @@ plot(X, [ones(m, 1) X]*theta, '--', 'LineWidth', 2)
 hold off;
 
 fprintf('Program paused. Press enter to continue.\n');
-pause;
-
+%pause;
 
 %% =========== Part 5: Learning Curve for Linear Regression =============
 %  Next, you should implement the learningCurve function. 
@@ -123,7 +122,7 @@ for i = 1:m
 end
 
 fprintf('Program paused. Press enter to continue.\n');
-pause;
+%pause;
 
 %% =========== Part 6: Feature Mapping for Polynomial Regression =============
 %  One solution to this is to use polynomial regression. You should now
@@ -164,7 +163,7 @@ pause;
 %  lambda to see how the fit and learning curve change.
 %
 
-lambda = 0;
+lambda = 1;
 [theta] = trainLinearReg(X_poly, y, lambda);
 
 % Plot training data and fit

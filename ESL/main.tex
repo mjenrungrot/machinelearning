@@ -1,0 +1,76 @@
+\documentclass{article}
+
+% Important packages to use
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\RequirePackage[12tabu, orthodox]{nag}
+\usepackage{microtype} 	% impoves spacing
+\usepackage{siunitx}	% simplify TeXing
+\usepackage{cleveref}
+\usepackage[colorlinks=false]{hyperref}
+
+% Wrapping figure
+\usepackage{sidecap}
+\usepackage{wrapfig}
+
+% Set line spacing in enumerate
+\usepackage{enumitem}
+\usepackage{lipsum}
+\setlist[enumerate]{topsep=0pt,itemsep=-3ex,partopsep=1ex,parsep=1ex}
+
+% Table of contents section
+% -1 part     1 section     3 subsubsection  5 subparagraph
+%  0 chapter  2 subsection  4 paragraph
+\setcounter{tocdepth}{3}
+
+% Automatic parenthesizing
+% \usepackage{nath}
+% \delimgrowth=1
+
+% pseudocode
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+% Merge file
+\usepackage{import}
+\usepackage{example}
+\usepackage{makeidx}
+
+% Wikipedia Style
+% *...* italic
+% **...** bold
+% ***...*** bold, italic
+\makeatletter
+\def\starparse{\@ifnextchar*{\bfstarx}{\itstar}}
+\def\bfstarx#1{\@ifnextchar*{\bfitstar\@gobble}{\bfstar}}
+\makeatother
+\def\itstar#1*{\textit{#1}\starON}
+\def\bfstar#1**{\textbf{#1}\starON}
+\def\bfitstar#1***{\textbf{\textit{#1}}\starON}
+\def\starON{\catcode`\*=\active}
+\def\starOFF{\catcode`\*=12}
+\starON
+\def*{\starOFF \starparse}
+\starOFF
+
+% graphics path
+\graphicspath{ {images/} }
+
+\title{Machine Learning}
+\author{Teerapat (Mek) Jenrungrot}
+\date{ }
+
+\begin{document}
+\starON
+\maketitle
+
+\tableofcontents
+
+\import{/}{chapter2.tex}
+% \import{/}{chapter3.tex}
+
+\end{document}

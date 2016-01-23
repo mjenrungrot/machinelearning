@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Overview of Supervised Learning}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Introduction}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Variable Types and Terminology}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Two Simple Approaches to Prediction: Least Squares and Nearest Neighbors}{section.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Linear Models and Least Squares}{subsection.1.3}% 5
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Nearest-Neighbor Methods}{subsection.1.3}% 6
+\BOOKMARK [3][-]{subsubsection.1.3.3}{From Least Squares to Nearest Neighbors}{subsection.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.4}{Statistical Decision Theory}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.5}{Local Methods in High Dimensions}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.6}{Statistical Models, Supervised Learning and Function Approximation}{section.1}% 10
+\BOOKMARK [3][-]{subsubsection.1.6.1}{A Statistical Model for the Jount Distribution Pr\(X,Y\)}{subsection.1.6}% 11
+\BOOKMARK [3][-]{subsubsection.1.6.2}{Supervised Learning}{subsection.1.6}% 12
+\BOOKMARK [3][-]{subsubsection.1.6.3}{Function Approximation}{subsection.1.6}% 13
+\BOOKMARK [2][-]{subsection.1.7}{Structured Regression Models}{section.1}% 14
+\BOOKMARK [3][-]{subsubsection.1.7.1}{Difficulty of the Problem}{subsection.1.7}% 15
+\BOOKMARK [2][-]{subsection.1.8}{Classes of Restricted Estimators}{section.1}% 16
+\BOOKMARK [3][-]{subsubsection.1.8.1}{Roughness Penalty and Bayesian Methods}{subsection.1.8}% 17
+\BOOKMARK [3][-]{subsubsection.1.8.2}{Kernel Methods and Local Regression}{subsection.1.8}% 18
+\BOOKMARK [2][-]{subsection.1.9}{Model Selection and the Bias-Variance Tradeoff}{section.1}% 19
+\BOOKMARK [2][-]{subsection.1.10}{Exercises}{section.1}% 20

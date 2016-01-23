@@ -24,10 +24,24 @@ sigma = 0.3;
 %
 
 
+testC = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30];
+testsigma = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30];
 
+ans = zeros(length(testC),length(testsigma));
 
+%for _i = 2:4
+%    for _j = 1:8
+%        C = testC(_i);
+%        sigma = testsigma(_j);
+%        model = svmTrain(X,y,C,@(x1, x2) gaussianKernel(x1, x2, sigma));
+%        predictions = svmPredict(model, Xval);
+%        C,sigma
+%        ans(_i,_j) = mean(double(predictions ~= yval))
+%    end
+%end
 
-
+C = testC(5);
+sigma = testsigma(3);
 
 % =========================================================================
 
